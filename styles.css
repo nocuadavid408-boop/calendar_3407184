@@ -112,6 +112,7 @@ body{
 
 
 
+
 .event-card{
     margin-top: 4px;
     border-radius: 5px;
@@ -123,6 +124,35 @@ body{
     align-items: center;
     gap: 4px;
     overflow: hidden;
+    animation: cardEntrada 0.4s ease both;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    box-shadow: 0 6px 16px rgba(223, 6, 6, 0.12);
+
+}
+
+
+.event-card:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+
+.event-card:active{
+    transform: translateY(0px);
+    box-shadow: none;
+}
+
+
+@keyframes cardEntrada {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .event-card__img{
@@ -164,7 +194,7 @@ body{
     opacity: 0.75;
 }
 
-/* colores e*/
+
 .event-card--purple{
     background-color: #EEEDFE;
     color: #3C3489;
@@ -216,7 +246,6 @@ media-query: una adaptacion de un estilo
         border-radius: 0;
     }
 
-    
     .days{
         height: 40px;
     }
@@ -247,11 +276,11 @@ media-query: una adaptacion de un estilo
     }
 
     .event-card--purple{ border-top-color: #7F77DD; }
-    .event-card--blue   { border-top-color: #378ADD; }
-    .event-card--coral  { border-top-color: #D85A30; }
-    .event-card--teal   { border-top-color: #1D9E75; }
-    .event-card--green  { border-top-color: #639922; }
-    .event-card--amber  { border-top-color: #BA7517; }
+    .event-card--blue { border-top-color: #378ADD; }
+    .event-card--coral { border-top-color: #D85A30; }
+    .event-card--teal { border-top-color: #1D9E75; }
+    .event-card--green { border-top-color: #639922; }
+    .event-card--amber { border-top-color: #BA7517; }
 
     .event-card__img{
         display: block;
