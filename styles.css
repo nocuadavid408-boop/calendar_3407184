@@ -111,6 +111,7 @@ body{
 }
 
 
+
 .event-card{
     margin-top: 4px;
     border-radius: 5px;
@@ -163,7 +164,7 @@ body{
     opacity: 0.75;
 }
 
-
+/* colores e*/
 .event-card--purple{
     background-color: #EEEDFE;
     color: #3C3489;
@@ -211,7 +212,17 @@ media-query: una adaptacion de un estilo
 @media screen and (max-width:500px){
 
     .container{
-        width: 97%;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    
+    .days{
+        height: 40px;
+    }
+
+    .days__item{
+        font-size: 8px;
     }
 
     .schedule{
@@ -220,10 +231,10 @@ media-query: una adaptacion de un estilo
     }
 
     .schedule__day{
-        padding: 4px 2px;
+        padding: 3px 1px;
         border-right: 1px solid #a6a8b31f;
         border-bottom: 1px solid #a6a8b31f;
-        font-size: 10px;
+        font-size: 8px;
         text-align: center;
     }
 
